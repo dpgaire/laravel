@@ -41,3 +41,5 @@ Route::get('test','TestController@ShowView');
 Route::get('insert','InsertController@index');
 
 Route::get('product','ProductController@index');
+
+Route::get('dif','TeacherController@index');

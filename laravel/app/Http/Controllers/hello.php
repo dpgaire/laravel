@@ -8,9 +8,10 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Hello extends Controller
 {
-    function index()
+    function index($fname)
     {
         return view('hello');
+        // echo "Hello: ".$fname;
     }
 }
 

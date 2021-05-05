@@ -37,3 +37,7 @@ Route::get('hello','hello@index');
 // });
 
 Route::get('test','TestController@ShowView');
+
+Route::get('insert','InsertController@index');
+
+Route::get('product','ProductController@index');

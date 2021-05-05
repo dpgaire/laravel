@@ -14,7 +14,7 @@
 Route::get('hello', function()
 {
     return view('hello');
-});
+})->middleware('test');
 //validation usign key value concept
 // Route::get('hello/{fname}',function($fname){
 //     echo "It's me: ".$fname."Gairhe";

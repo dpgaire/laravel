@@ -17,7 +17,7 @@ class test
     {
         $ip=$request->ip();
         // $ip='179.168.1.2';
-        if($ip=='127.0.0.1')
+        if($ip=='::1')
         {
             return redirect('/');
         }

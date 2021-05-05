@@ -8,10 +8,17 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Hello extends Controller
 {
-    function index($fname)
+    //Send data from controller to view
+    function index()
     {
-        return view('hello');
+        $student=['Dp vai','Ram','Krishan','Hari','Shiva'];
+        //Multiple array 
+        $marks=['20','21','22','23','24'];
+        $address=['galyang','pokhara','syangja','chapakot','waling'];
+        return view('hello')->withstu($student)->withmks($marks)->withadd($address);
+        // return view('hello')->with(['stu'=>$student],['mks'=>$marks]);
         // echo "Hello: ".$fname;
+        // return view('hello');
     }
 }
 

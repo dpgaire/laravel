@@ -37,7 +37,14 @@ class FormController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        $this->validate($request,['email'=>'required | email']);
+        //Local validation 
+    //     $this->validate($request,['email'=>'required | email'],
+        
+    //     ['email.required'=>'The field should required'],
+    
+    // ['email.email'=>'Enter valid email']);
     }
 
     /**

@@ -89,8 +89,9 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'email' => [
+            'required' => ':attribute must be required.',
+            'email'=>':attribute field cannot be empty.',
         ],
     ],
 

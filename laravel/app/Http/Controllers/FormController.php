@@ -6,31 +6,17 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Student;
 
-
-class InsertController extends Controller
+class FormController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        // return "Hi i am dp";
-        // return $_GET['sname'];
-        // $student =new Student;
-        // $student->sname="DurgaG";
-        // $student->age=54;
-        // $student->save();
-        // echo "Inserted sucessfully";
-        // dd($request->sname);
-        //Die and Dumb function
-        // dd( $request->all());
-        dd($request);
-        
-
+        return view('form');
     }
 
     /**
@@ -51,7 +37,7 @@ class InsertController extends Controller
      */
     public function store(Request $request)
     {
-       
+        dd($request->all());
     }
 
     /**

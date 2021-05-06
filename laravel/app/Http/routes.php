@@ -43,3 +43,7 @@ Route::get('insert','InsertController@index');
 Route::get('product','ProductController@index');
 
 Route::get('dif','TeacherController@index');
+
+Route::get('form','FormController@index');
+
+Route::post('submit','FormController@store')->name('formdata');
